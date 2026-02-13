@@ -2,68 +2,25 @@
 <html>
 <head>
     <title>Happy Valentine’s Day 💖</title>
-
-    <style>
-        body {
-            background-color: pink;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            margin-top: 100px;
-        }
-
-        button {
-            padding: 12px 25px;
-            margin: 10px;
-            font-size: 18px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        #yesBtn {
-            background-color: red;
-            color: white;
-        }
-
-        #noBtn {
-            background-color: gray;
-            color: white;
-        }
-
-        #result {
-            margin-top: 30px;
-            font-size: 24px;
-            color: darkred;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div class="container">
-        <h1>Will You Be My Valentine? bharathi💕</h1>
+        <h1>Will You Be My Valentine?bharathi 💕</h1>
 
-        <button id="yesBtn" onclick="sayYes()">YES 💖</button>
-        <button id="noBtn" onmouseover="moveNo()">NO 😜</button>
+        <div class="buttons">
+            <button id="yesBtn" onclick="sayYes()">YES 💖</button>
+            <button id="noBtn" onmouseover="moveNo()">NO 😜</button>
+        </div>
 
         <h2 id="result"></h2>
     </div>
 
 <script>
-
 function sayYes() {
     document.getElementById("result").innerHTML =
-    "Yayyyy 😍 Happy Valentine’s Day bharathi love you💕 <br><br> <img src='love.jpg.jpeg' width='250'>";
-}
-
-    document.getElementById("yesBtn").style.display = "none";
-    document.getElementById("noBtn").style.display = "none";
-
-    document.body.style.backgroundColor = "#ffb6c1";
+    "Yayyyy 😍 Happy Valentine’s Day My Love bharathi 💕";
 }
 
 function moveNo() {
@@ -72,9 +29,7 @@ function moveNo() {
     noBtn.style.top = Math.random() * 400 + "px";
     noBtn.style.left = Math.random() * 400 + "px";
 }
-
 </script>
 
 </body>
 </html>
-
